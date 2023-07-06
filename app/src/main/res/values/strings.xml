@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">VMS App</string>
+
+    <string name="my_name">Victor Kithinji</string>
+    <string name="my_email">kithinjiVictor69@gmail.com</string>
+    <string name="my_phone">+254758179504</string>
+
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+        irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+        deserunt mollit anim id est laborum.
+    </string>
+    <string name="lorem_ipsu">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+        irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+    </string>
+    <string name="lorem_ips">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </string>
+    <string name="lorem_ip">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </string>
+    <string name="lorem_i">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    </string>
+    <string name="victor_kithinji">Victor Kithinji</string>
+    <string name="date">Date</string>
+    <string name="asc">Asc</string>
+    <string name="welcome_to_nvms_mobile_app">Welcome to\nVMS Mobile App</string>
+    <string name="add_insurance">Add Insurance</string>
+    <string name="add_expense">Add Expense</string>
+    <string name="add_vehicle">Add Vehicle</string>
+    <string name="rate_a_mechanic">Rate a Mechanic</string>
+    <string name="rate_a_garage">Rate a Garage</string>
+    <string name="view_insurances">View Insurances</string>
+    <string name="view_expenses">View Expenses</string>
+    <string name="view_garages">View Garages</string>
+    <string name="view_mechanics">View Mechanics</string>
+    <string name="view_colleagues">View Colleagues</string>
+    <string name="profile">Profile</string>
+    <string name="kenya">Kenya</string>
+    <string name="nairobi">Nairobi</string>
+    <string name="processing">Processing...</string>
+    <string name="help">Help</string>
+    <string name="logout">Logout</string>
+    <string name="refresh">Refresh</string>
+</resources>

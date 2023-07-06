@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.akr.vmsapp.adm.AdmProfileAct">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:padding="8dp"
+        android:layout_gravity="center"
+        android:src="@android:drawable/btn_star_big_on"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="2dp"
+        tools:ignore="MissingClass" />
+
+    <TextView
+        android:id="@+id/tv_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="username"
+        android:textColor="@color/teal_700"
+        android:textSize="18sp"
+        android:textStyle="bold|italic" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="8dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civ_name"
+            android:layout_width="64dp"
+            android:layout_height="42dp"
+            tools:ignore="MissingClass" />
+
+        <TextView
+            android:id="@+id/tv_nm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/civ_name"
+            android:layout_toRightOf="@id/civ_name"
+            android:text="Name"
+            android:textColor="@color/mCyan"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_nm"
+            android:layout_alignStart="@id/tv_nm"
+            android:layout_alignLeft="@id/tv_nm" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="8dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civ_phone"
+            android:layout_width="64dp"
+            android:layout_height="42dp" />
+
+        <TextView
+            android:id="@+id/tv_ph"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/civ_phone"
+            android:layout_toRightOf="@id/civ_phone"
+            android:text="Phone Number"
+            android:textColor="@color/mCyan"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_ph"
+            android:layout_alignStart="@id/tv_ph"
+            android:layout_alignLeft="@id/tv_ph" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="8dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civ_email"
+            android:layout_width="64dp"
+            android:layout_height="42dp" />
+
+        <TextView
+            android:id="@+id/tv_em"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/civ_email"
+            android:layout_toRightOf="@id/civ_email"
+            android:text="Email Address"
+            android:textColor="@color/mCyan"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_em"
+            android:layout_alignStart="@id/tv_em"
+            android:layout_alignLeft="@id/tv_em" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="8dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civ_regno"
+            android:layout_width="64dp"
+            android:layout_height="42dp" />
+
+        <TextView
+            android:id="@+id/tv_rn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/civ_regno"
+            android:layout_toRightOf="@id/civ_regno"
+            android:text="Date of Birth"
+            android:textColor="@color/mCyan"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_regno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_rn"
+            android:layout_alignStart="@id/tv_rn"
+            android:layout_alignLeft="@id/tv_rn" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="8dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civ_department"
+            android:layout_width="64dp"
+            android:layout_height="42dp" />
+
+        <TextView
+            android:id="@+id/tv_de"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/civ_department"
+            android:layout_toRightOf="@id/civ_department"
+            android:text="Country code"
+            android:textColor="@color/mCyan"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_department"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_de"
+            android:layout_alignStart="@id/tv_de"
+            android:layout_alignLeft="@id/tv_de" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="8dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civ_gender"
+            android:layout_width="64dp"
+            android:layout_height="42dp" />
+
+        <TextView
+            android:id="@+id/tv_ge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/civ_gender"
+            android:layout_toRightOf="@id/civ_gender"
+            android:text="Gender"
+            android:textColor="@color/mCyan"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_ge"
+            android:layout_alignStart="@id/tv_ge"
+            android:layout_alignLeft="@id/tv_ge" />
+    </RelativeLayout>
+</LinearLayout>

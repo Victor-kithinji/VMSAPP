@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/mi_refresh"
+        android:icon="@drawable/ic_refresh_b"
+        android:title="Refresh"
+        app:showAsAction="always" />
+
+    <item
+        android:icon="@drawable/ic_sort_b"
+        android:title="Sort distance"
+        app:showAsAction="never">
+
+        <menu>
+            <item
+                android:id="@+id/mi_sort_asc"
+                android:title="Sort Asc"
+                app:showAsAction="ifRoom"/>
+            <item
+                android:id="@+id/mi_sort_desc"
+                android:title="Sort Desc"
+                app:showAsAction="ifRoom"/>
+        </menu>
+    </item>
+</menu>

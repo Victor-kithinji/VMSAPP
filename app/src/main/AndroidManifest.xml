@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.akr.vmsapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- To request foreground location access, declare one of these permissions. -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- <uses-permission android:name="android.permission.CALL_PHONE" /> -->
+    <!--
+    Required only when requesting background location access on
+       Android 10 (API level 29) and higher.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:fullBackupContent="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.VMSApp"
+        android:usesCleartextTraffic="true"
+        tools:ignore="UnusedAttribute">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBThh813-SUo22ZMHC16z4UX2kkYFa9zEE" />
+        <!--<meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="${MAPS_API_KEY}" />-->
+
+        <activity android:name=".gen.MapLocAct" />
+        <activity android:name=".gen.HelpActivity" />
+        <activity android:name=".vis.ReminderAct" />
+        <!--
+        <activity android:name=".GetLocationAct">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        -->
+        <activity android:name=".adm.AdminsAct" />
+        <activity android:name=".gen.SpareShopsAct" />
+        <activity android:name=".gen.SparePartsAct" />
+        <activity android:name=".gen.MecRatingsAct" />
+        <activity android:name=".gen.GrgRatingsAct" />
+        <activity android:name=".gen.ModelsAct" />
+        <activity android:name=".gen.BrandsAct" />
+        <activity android:name=".own.InsurancesAct" />
+        <activity android:name=".own.ExpensesAct" />
+        <activity android:name=".own.AddInsuranceAct" />
+        <activity android:name=".own.AddExpenseAct" />
+        <activity android:name=".own.AddVehicleAct" />
+        <activity android:name=".own.AddMecRatingAct" />
+        <activity android:name=".own.AddGrgRatingAct" />
+        <activity android:name=".mec.AddSparePartAct" />
+        <activity android:name=".mec.AddSpareShopAct" />
+        <activity android:name=".mec.AddGarageAct" />
+        <activity android:name=".adm.AddModelAct" />
+        <activity android:name=".adm.AddBrandAct" />
+        <activity android:name=".adm.AddVehicleTypeAct" />
+        <activity android:name=".adm.AddCountryAct" />
+        <activity android:name=".adm.VehicleTypesAct" />
+        <activity android:name=".adm.VehiclesAct" />
+        <activity android:name=".adm.AdmProfileAct" />
+        <activity android:name=".gen.OwnersAct" />
+        <activity android:name=".adm.AdmDashAct" />
+        <activity android:name=".adm.AdmSignUpAct" />
+        <activity android:name=".adm.AdmSignInAct" />
+        <activity android:name=".own.OwnDashAct" />
+        <activity android:name=".mec.MecDashAct" />
+        <activity android:name=".gen.CountriesAct" />
+        <activity android:name=".gen.MakersAct" />
+        <activity android:name=".gen.GaragesAct" />
+        <activity android:name=".own.OwnProfileAct" />
+        <activity android:name=".own.OwnSignInAct" />
+        <activity android:name=".own.OwnSignUpAct" />
+        <activity android:name=".mec.MecProfileAct" />
+        <activity android:name=".mec.MecSignInAct" />
+        <activity android:name=".mec.MecSignUpAct" /> <!-- <activity android:name=".WelcomeAct" /> -->
+        <activity android:name=".WelcomeAct"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <!--
+        <service
+            android:name=".AlarmService"
+            android:enabled="true" />
+        -->
+        <receiver android:name=".vis.AlertReceiver" />
+    </application>
+
+</manifest>

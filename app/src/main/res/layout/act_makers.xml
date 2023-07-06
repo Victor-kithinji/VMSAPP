@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F0F0"
+    tools:context="com.akr.vmsapp.gen.MakersAct">
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/myrect"
+        android:gravity="end"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_dash_item"
+            android:padding="8dp"
+            android:gravity="center"
+            android:text="@string/date"
+            android:textStyle="bold"
+            app:drawableLeftCompat="@drawable/ic_sort_b"
+            app:drawableRightCompat="@drawable/ic_arrow_drop_down_black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_dash_item"
+            android:padding="8dp"
+            android:gravity="center"
+            android:text="@string/asc"
+            android:textStyle="bold"
+            app:drawableLeftCompat="@drawable/ic_sort_b"
+            app:drawableRightCompat="@drawable/ic_arrow_drop_down_black" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_nodata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="@string/my_name"
+        android:textColor="@color/pRed"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_makers"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ll"
+        android:scrollbars="vertical"
+        tools:listitem="@layout/lay_maker" />
+</RelativeLayout>
